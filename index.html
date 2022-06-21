@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="styles.css">
+   
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CALCULATOR</title>
+  </head>
+  <body>
+    <div class="cal-body">
+      <div class="name">Calculator</div>
+      <div id="input" class=""></div>
+      <div class="cal-button">
+          <table>
+              <tbody>
+                  <tr>
+                    
+                      <td colspan="2"><button class="btn btn-operator span2" onclick="clearInput()">CA</button> </td>
+                      <td><button class="btn btn-operator " onclick="eraseNum()">C</button></td>
+                      <td><button class="btn btn-operator " onclick="insertNum('/')">&divide;</button></td>
+                  </tr>
+                  <tr>
+                      <td><button class="btn btn-num" onclick="insertNum(7)"">7</button></td>
+                      <td><button class="btn btn-num" onclick="insertNum(8)">8</button></td>
+                      <td><button class="btn btn-num" onclick="insertNum(9)">9</button></td>
+                      <td><button class="btn btn-operator " onclick="insertNum('*')">x</button></td>
+                  </tr>
+                  <tr>
+                      <td><button class="btn btn-num" onclick="insertNum(4)">4</button></td>
+                      <td><button class="btn btn-num" onclick="insertNum(5)">5</button></td>
+                      <td><button class="btn btn-num" onclick="insertNum(6)">6</button></td>
+                      <td><button class="btn btn-operator" onclick="insertNum('-')" > &minus; </button></td>
+                  </tr>
+                  <tr>
+                      <td><button class="btn btn-num" onclick="insertNum(1)">1</button></td>
+                      <td><button class="btn btn-num" onclick="insertNum(2)">2</button></td>
+                      <td><button class="btn btn-num" onclick="insertNum(3)">3</button></td>
+                      <td><button class="btn btn-operator " onclick="insertNum('+')">+</button></td>
+                  </tr>
+                  <tr> 
+                      
+                     
+                      <td><button class="btn btn-num" onclick="insertNum('.')">.</button></td>
+                       <td><button class="btn btn-num dot" onclick="insertNum(0)">0</button></td>
+                      <td colspan="2"><button class="btn btn-operator equal span2" onclick="equalTo()">=</button></td>
+                  </tr>
+              </tbody>
+          </table>
+          </div>
+      </div>
+    </div>
+   
+   <script >
+     var main = document.getElementsByClassName("name");
+     main.textContent = 'my calculator';
+
+     const inputField = document.getElementById("input");
+const insertNum = (num) => (inputField.textContent += num);
+const equalTo = () =>
+  inputField.textContent
+    ? (inputField.textContent = eval(inputField.textContent))
+    : false;
+const eraseNum = () =>
+  (inputField.textContent = inputField.textContent.substring(
+    0,
+    inputField.textContent.length - 1
+  ));
+const clearInput = () => (inputField.textContent = "");
+
+    </script>
+  </body>
+</html>

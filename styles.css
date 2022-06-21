@@ -1,0 +1,88 @@
+body {
+  text-align: center;
+  margin: 50px;
+  background-color: rgb(229, 229, 224);
+  display: flex;
+  justify-content: center;
+}
+.cal-body {
+  border-radius: 4px;
+  width: 600px;
+  height: 550px;
+  background-color: rgb(153, 153, 99);
+  border: 1px solid rgb(210, 207, 207);
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+.name {
+  color: white;
+  font-weight: 600;
+  font-size: 25px;
+  font-family: "Times New Roman", Times, serif, Helvetica, sans-serif;
+}
+#input {
+  border-radius: 6px;
+  width: 94%;
+  height: 2em;
+  margin-left: 10px;
+  margin-bottom: 10px;
+  border: 2px solid #3c4043;
+  text-align: right;
+  padding: 5px;
+  display: flex;
+  justify-content: flex-end;
+  font-size: 3em;
+  align-items: center;
+  transition: all 0.3s ease-in;
+  overflow: hidden;
+}
+
+td {
+  border: 0px solid wheat;
+  padding: 10px;
+  width: 150px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+table {
+  margin: 10px;
+}
+.btn-operator {
+  background-color: #5f6368;
+  border: 2px solid #161b21;
+  border-radius: 5px;
+  columns: gold;
+}
+.btn-num {
+  background-color: #1f2021;
+  border: 2px solid #a3bfd2;
+  border-radius: 7px;
+}
+.equal {
+  border-radius: 7px;
+  background-color: #8ab4f8;
+  border: 2px solid #130588;
+}
+
+button {
+  width: 100px;
+  color: white;
+  height: 60px;
+  font-size: 2em;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  cursor: pointer;
+  transition: 0.3s;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.15), 0 10px 10px rgba(0, 0, 0, 0.12);
+}
+
+button:hover {
+  background-color: aliceblue;
+  color: #161b21;
+}
+
+.span2 {
+  width: 250px;
+  height: 60px;
+}
